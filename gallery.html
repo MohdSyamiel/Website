@@ -1,0 +1,126 @@
+<html>
+<head>
+<script>var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<link rel="stylesheet" type="text/css" href="Sliding.css">
+<title>gallery</title>
+<body>
+<a href="index.html" rel="attachment wp-att-4245">
+<img class="alignnone size-full wp-image-4245" title="Home" src="button/home1.png" alt="Home" width="125" height="42">
+</a>
+<a href="biodata.html" rel="attachment wp-att-4245">
+<img class="alignnone size-full wp-image-4245" title="Biodata" src="button/biodata1.png" alt="Biodata" width="125" height="42">
+</a>
+<a href="experience.html" rel="attachment wp-att-4245">
+<img class="alignnone size-full wp-image-4245" title="Home" src="button/experience.png" alt="Home" width="125" height="42">
+</a>
+<a href="education.html" rel="attachment wp-att-4245">
+<img class="alignnone size-full wp-image-4245" title="Home" src="button/education.png" alt="Home" width="125" height="42">
+</a>
+<a href="family.html" rel="attachment wp-att-4245">
+<img class="alignnone size-full wp-image-4245" title="Home" src="button/family.png" alt="Home" width="125" height="42">
+</a>
+<a href="gallery.html" rel="attachment wp-att-4245">
+<img class="alignnone size-full wp-image-4245" title="Gallery" src="button/gallery.png" alt="Gallery" width="125" height="42">
+<a/>
+<a href="aboutme.html" rel="attachment wp-att-4245">
+<img class="alignnone size-full wp-image-4245" title="About Me" src="button/about me.png" alt="About Me" width="125" height="42">
+</a>
+<br>
+<font size="6"><b><center><font face="times new roman"><font color="#F1C40F">GALLERY</font></center></b></font>
+<br>
+<font size="3"><b><center><font face="times new roman"><font color="#F1C40F">Portion of my memory where I started UiTM stored in here :D</font></center></b></font>
+<br>
+<div class="slideshow-container">
+<div class="mySlides fade">
+<div class="numbertext">1 / 9</div>
+<p align="center"><img src="Images/Interim.jpg" style="width:40%" border="4"><align="centre"></p>
+<div class="text"><font color="#F1C40F">Freshmen day during Interim</div></font>
+</div>
+<br>
+<div class="mySlides fade">
+<div class="numbertext">2 / 9</div>
+<p align="center"><img src="Images/Picture Day.jpg" style="width:40%"  border="4"><align="centre"></p>
+<div class="text"><font color="#F1C40F">Picture Day with the class</div></font>
+</div>
+<br>
+<div class="mySlides fade">
+<div class="numbertext">3 / 9</div>
+<p align="center"><img src="Images/IMD111.jpg" style="width:40%"  border="4"><align="centre"></p>
+<div class="text"><font color="#F1C40F">Last class of semester 1 of IMD111</div></font>
+</div>
+<br>
+<div class="mySlides fade">
+<div class="numbertext">4 / 9</div>
+<p align="center"><img src="Images/IMD112.jpg" style="width:40%"  border="4"><align="centre"></p>
+<div class="text"><font color="#F1C40F">Last class of semester 1 of IMD112</div></font>
+</div>
+<br>
+<div class="mySlides fade">
+<div class="numbertext">5 / 9</div>
+<p align="center"><img src="Images/CTU.jpg" style="width:40%"  border="4"><align="centre"></p>
+<div class="text"><font color="#F1C40F">Last class of semester 2 with practical Lecturer</div></font>
+</div>
+<br>
+<div class="mySlides fade">
+<div class="numbertext">6 / 9</div>
+<p align="center"><img src="Images/ELC.jpg" style="width:40%"  border="4"><align="centre"></p>
+<div class="text"><font color="#F1C40F">Last class of semester 2 with English practical lecturer</div></font>
+</div>
+<br>
+<div class="mySlides fade">
+<div class="numbertext">7 / 9</div>
+<p align="center"><img src="Images/IMD124.jpg" style="width:40%"  border="4"><align="centre"></p>
+<div class="text"><font color="#F1C40F">Last class of semester 2 of IMD124</div></font>
+</div>
+<br>
+<div class="mySlides fade">
+<div class="numbertext">8 / 9</div>
+<p align="center"><img src="Images/FamilyPic.jpg" style="width:50%"  border="4"><align="centre"></p>
+<div class="text"><font color="#F1C40F">My Beloved Family Celebrating Eid Mubarak in 2019</div></font>
+</div>
+<br>
+<div class="mySlides fade">
+<div class="numbertext">9 / 9</div>
+<p align="center"><img src="Images/Roomate.jpg" style="height:50%"  border="4"<align="centre"></p>
+<div class="text"><font color="#F1C40F">Celebration Day with homies before semester 2 end</div></font>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
+</div>
+
